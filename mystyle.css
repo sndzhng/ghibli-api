@@ -1,0 +1,61 @@
+html {
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.8;
+  color: rgb(200,200,200);
+  background: rgb(50,50,50);
+}
+
+img {
+  filter: invert(80%);
+  display: block;
+  max-width: 100%;
+  margin: 50px auto;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 30px 0 30px;
+  margin: 0 0 20px 0;
+  font-size: 20px;
+}
+
+p {
+  padding: 0px 30px 20px 30px;
+  margin: 0;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.card {
+  margin: 5px;
+  border: 2px solid rgb(100,100,100);
+  border-radius: 10px
+}
+
+.card:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+  transform: translate3D(0, -2px, 0);
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}
